@@ -1,0 +1,47 @@
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+}
+
+.nav-link {
+  font-family: viga;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.nav-link:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #0b63dc;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+.jumbotron {
+  font-family: viga;
+  padding-top: 8rem;
+  background-color: #0a81ab;
+}
+
+#about h2 {
+  font-family: viga;
+}
+
+#program {
+  background-color: #0a81ab;
+  font-family: viga;
+}
+
+#contact {
+  font-family: viga;
+}
+
+section {
+  padding-top: 7rem;
+}
+
+footer {
+  font-family: viga;
+}
