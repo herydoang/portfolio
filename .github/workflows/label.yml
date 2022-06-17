@@ -1,0 +1,16 @@
+name: Deploy My Portfolio
+on: [push]
+jobs:
+  web-deploy:
+    name: 🎉 Deploy on heryd0ang.jamanit.com
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ftp.jamanit.com
+        username: heryd0ang@heryd0ang.jamanit.com
+        password: ${{ secrets.ftp_password }}
